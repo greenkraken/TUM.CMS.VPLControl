@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUM.CMS.NodeClassGenerator"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUM.CMS.VplControl.TobiasTest", "TUM.CMS.VplControl.TobiasTest\TUM.CMS.VplControl.TobiasTest.csproj", "{C61E97C6-C24D-4541-B64B-00AF26D9E59E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUM.CMS.VplControl.Wdh", "TUM.CMS.VplControl.Wdh\TUM.CMS.VplControl.Wdh.csproj", "{A1D3B166-CF48-40E1-ADC7-4F2539553619}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,14 @@ Global
 		{C61E97C6-C24D-4541-B64B-00AF26D9E59E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C61E97C6-C24D-4541-B64B-00AF26D9E59E}.Release|x64.ActiveCfg = Release|Any CPU
 		{C61E97C6-C24D-4541-B64B-00AF26D9E59E}.Release|x64.Build.0 = Release|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Debug|x64.Build.0 = Debug|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Release|x64.ActiveCfg = Release|Any CPU
+		{A1D3B166-CF48-40E1-ADC7-4F2539553619}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

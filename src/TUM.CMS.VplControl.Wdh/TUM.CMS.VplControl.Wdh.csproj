@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C61E97C6-C24D-4541-B64B-00AF26D9E59E}</ProjectGuid>
+    <ProjectGuid>{A1D3B166-CF48-40E1-ADC7-4F2539553619}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TUM.CMS.VplControl.TobiasTest</RootNamespace>
-    <AssemblyName>TUM.CMS.VplControl.TobiasTest</AssemblyName>
+    <RootNamespace>TUM.CMS.VplControl.Wdh</RootNamespace>
+    <AssemblyName>TUM.CMS.VplControl.Wdh</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -44,9 +44,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Nodes\DrawFunction.cs" />
-    <Compile Include="Nodes\InsertFunction.cs" />
-    <Compile Include="Nodes\TobiasKnoten.cs" />
+    <Compile Include="Nodes\TobiasWdh.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

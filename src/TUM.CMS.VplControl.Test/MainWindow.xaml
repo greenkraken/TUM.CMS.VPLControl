@@ -14,11 +14,9 @@
                 <core:VplControl Name="VplControl" ClipToBounds="True" />
             </TabItem>
             <TabItem Header="Group_1">
-                <core:VplGroupControl Name="VplGroupControl"  />
+                <core:VplGroupControl Name="VplGroupControl" ClipToBounds="True" />
             </TabItem>
             <TabItem Header="+" />
-
         </TabControl>
-
     </Grid>
 </Window>

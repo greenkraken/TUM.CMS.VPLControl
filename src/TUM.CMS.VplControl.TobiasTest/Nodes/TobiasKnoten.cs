@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 using TUM.CMS.VplControl.Core;
 
 namespace TUM.CMS.VplControl.TobiasTest.Nodes
@@ -8,23 +9,20 @@ namespace TUM.CMS.VplControl.TobiasTest.Nodes
         public TobiasKnoten(Core.VplControl hostCanvas) : base(hostCanvas)
         {
 
-            AddInputPortToNode("Eingangswert1", typeof(double));
-            AddOutputPortToNode("Ausgangswert 1", typeof(double));
+            AddInputPortToNode("function", typeof(string));
 
-            var textbox = new TextBox();
+            IsResizeable = true;
+            var KoordSys = new DataGrid() ;
 
-            AddControlToNode(textbox);
+
+            AddControlToNode(KoordSys);
+
 
 
         }
 
         public override void Calculate()
         {
-
-            var inputvalue = (double)InputPorts[0].Data;
-
-            OutputPorts[0].Data = inputvalue * 2;
-
             // var test = true; 
             // throw new NotImplementedException();
         }

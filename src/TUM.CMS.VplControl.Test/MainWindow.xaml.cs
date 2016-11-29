@@ -8,6 +8,8 @@ using TUM.CMS.VplControl.Utilities;
 using TUM.CMS.VplControl.Watch3D.Nodes;
 using TUM.CMS.VPL.Scripting.Nodes;
 using TUM.CMS.VplControl.TobiasTest.Nodes;
+using TUM.CMS.VplControl.Wdh.Nodes;
+using TUM.CMS.VplControl.Nodes.Input;
 
 namespace TUM.CMS.VplControl.Test
 {
@@ -40,9 +42,17 @@ namespace TUM.CMS.VplControl.Test
                 Utilities.Utilities.GetTypesInNamespace(Assembly.GetExecutingAssembly(), "TUM.CMS.VplControl.TobiasTest.Nodes")
                     .ToList());
 
+            VplGroupControl.MainVplControl.ExternalNodeTypes.AddRange(
+                Utilities.Utilities.GetTypesInNamespace(Assembly.GetExecutingAssembly(), "TUM.CMS.VplControl.Wdh.Nodes")
+                    .ToList());
+
             VplGroupControl.MainVplControl.ExternalNodeTypes.Add(typeof (ScriptingNode));
             VplGroupControl.MainVplControl.ExternalNodeTypes.Add(typeof (Watch3DNode));
             VplGroupControl.MainVplControl.ExternalNodeTypes.Add(typeof(TobiasKnoten));
+            VplGroupControl.MainVplControl.ExternalNodeTypes.Add(typeof(TobiasWdh));
+            VplGroupControl.MainVplControl.ExternalNodeTypes.Add(typeof(InsertFunction));
+            VplGroupControl.MainVplControl.ExternalNodeTypes.Add(typeof(DrawFunction));
+
 
             VplGroupControl.MainVplControl.NodeTypeMode = NodeTypeModes.All;
 
