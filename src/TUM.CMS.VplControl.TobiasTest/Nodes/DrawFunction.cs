@@ -1,16 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Media3D;
+using Microsoft.Win32;
 using TUM.CMS.VplControl.Core;
+using TUM.CMS.VplControl.TobiasTest.Controls;
 
 namespace TUM.CMS.VplControl.TobiasTest.Nodes
 {
     public class DrawFunction : Node
     {
+
+        public DrawFunctionControl Control;
+
         public DrawFunction(Core.VplControl hostCanvas) : base(hostCanvas)
         {
+
+            Control = new DrawFunctionControl();
 
             AddInputPortToNode("function", typeof(string));
 
@@ -22,6 +33,8 @@ namespace TUM.CMS.VplControl.TobiasTest.Nodes
 
         public override void Calculate()
         {
+            
+
             var function = InputPorts[0];
 
             double y;
@@ -38,12 +51,12 @@ namespace TUM.CMS.VplControl.TobiasTest.Nodes
                 //get string from input (how to convert?)
                 y = x+2;
                 //plot x,y ?
-
+                
             }
 
 
 
-            OutputPorts[0] = y;
+            //OutputPorts[0] = y;
 
         }
 

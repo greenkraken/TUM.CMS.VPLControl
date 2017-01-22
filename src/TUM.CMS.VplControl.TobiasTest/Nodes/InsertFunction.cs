@@ -5,6 +5,7 @@ using System.Windows.Input;
 using System.Xml;
 using TUM.CMS.VplControl.Core;
 
+// Shows a String Window to write down your mathematical Function.
 namespace TUM.CMS.VplControl.TobiasTest.Nodes
 {
     public class InsertFunction : Node
